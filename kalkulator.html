@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="css/mystyle.css" />
+  </head>
+  <body>
+    <form id="formulir">
+      <table align="center" cellpadding="15" width="30%">
+        <thead>
+          <tr>
+            <th colspan="2">Kalkulatorku</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Angka 1</td>
+            <td><input type="text" name="a1" /></td>
+          </tr>
+          <tr>
+            <td>Angka 2</td>
+            <td><input type="text" name="a2" /></td>
+          </tr>
+          <tr>
+            <td>Hasil</td>
+            <td><input type="text" name="hasil" disabled /></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="6">
+              <input type="button" value="+" onclick="tambah()" />
+              <input type="button" value="-" onclick="kurang()" />
+              <input type="button" value="/" onclick="bagi()" />
+              <input type="button" value="*" onclick="kali()" />
+              <input type="button" value="^" onclick="pangkat()" />
+              <input
+                type="button"
+                name="batal"
+                value="batal"
+                onclick="kosongAll()"
+                size="30px"
+              />
+            </th>
+          </tr>
+        </tfoot>
+      </table>
+    </form>
+    <script src="js/myscript.js"></script>
+  </body>
+</html>
