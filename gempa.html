@@ -5,16 +5,16 @@
       this.skala = skala;
     }
 
-    dampak(skl) {
-      if (this.skala == 0 && this.skala == 2) {
+    dampak() {
+      if (this.skala => 0 && this.skala <= 2) {
         document.write(
           `Terjadi Gempa di ${this.lokasi} dengan skala ${this.skala} Magnitudo dampaknya Tidak terasa`
         );
-      } else if (this.skala >= 2 && this.skala <= 4) {
+      } else if (this.skala > 2 && this.skala <= 4) {
         document.write(
           `Terjadi Gempa di ${this.lokasi} dengan skala ${this.skala} Magnitudo dampaknya Bangunan retak-retak`
         );
-      } else if (this.skala >= 4 && this.skala <= 6) {
+      } else if (this.skala > 4 && this.skala <= 6) {
         document.write(
           `Terjadi Gempa di ${this.lokasi} dengan skala ${this.skala} Magnitudo dampaknya Bangunan roboh`
         );
