@@ -26,9 +26,9 @@
     $tunjab = $gapok * 0.2;
     $sts = $status == 'Menikah' ? 'Sudah Menikah' : 'Belum';
 
-    if ($jmlAnak >= 0 && $jmlAnak <= 2) {
+    if ($status == 'Menikah' && $jmlAnak >= 0 && $jmlAnak <= 2) {
         $tunkel = $gapok * 0.05;
-    } elseif ($jmlAnak >= 3 && $jmlAnak <= 5) {
+    } elseif ($status == 'Menikah' && $jmlAnak >= 3 && $jmlAnak <= 5) {
         $tunkel = $gapok * 0.1;
     } else {
         $tunkel = '';
