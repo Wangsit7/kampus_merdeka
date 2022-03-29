@@ -1,0 +1,42 @@
+table {
+  border-collapse: separate;
+}
+
+th {
+  background-color: #4e7bf7;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: rgb(223, 240, 240);
+}
+
+input[type="text"] {
+  background-color: rgba(137, 205, 250, 0.623);
+  width: 80%;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 15px;
+  margin: 0 4px;
+}
+
+input[type="password"] {
+  background-color: rgba(137, 205, 250, 0.623);
+  width: 80%;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 15px;
+  margin: 0 4px;
+}
+
+input[type="submit"] {
+  background-color: rgba(31, 59, 78, 0.623);
+  width: 30%;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 5px;
+}
